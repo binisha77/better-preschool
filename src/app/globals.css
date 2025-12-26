@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Reem+Kufi+Ink&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  /* dhari use huna color figma bata lako */
+  --brand-blue: #38BAE0;  
+  --brand-yellow: #FFD700;
+    /* font poppins in design so added */
+  --font-poppins: 'Poppins', sans-serif;
+  --font-reem: 'Reem Kufi Ink', sans-serif;
+}
+
+@theme  {
+  --font-poppins: var(--font-poppins);
+  --font-reem: var(--font-reem);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-yellow: var(--brand-yellow);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins);
+}
