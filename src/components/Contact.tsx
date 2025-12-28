@@ -65,19 +65,16 @@ export default function Contact() {
               </button>
             </form>
           </div>
-          <aside className="w -[471px] h-[640px] flex flex-col justify-between top-[96px] left-[147px] bottom-[96px] right-[147px] p-10 bg-white rounded-[22px] ">
-            <div className="space-y-15   opacity-100 
-              rounded-tl-[50px] 
-              rounded-tr-[50px] 
-              rounded-bl-[50px]">
+          <aside className="w -[471px] h-[550px] flex flex-col justify-between top-[96px] left-[147px] bottom-[96px] right-[147px] p-10 bg-white rounded-[22px] ">
+            <div className="space-y-15  ">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-full bg-[#38BAE0] flex items-center justify-center text-white flex-shrink-0">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-800">Email</h4>
-                  <p className="text-slate-600 text-sm">support@bettermontessori.com</p>
-                  <p className="text-xs text-slate-400 mt-1">We reply within 24 hours.</p>
+                  <h4 className="font-bold text-black">Email</h4>
+                  <p className="text-black text-sm">support@bettermontessori.com</p>
+                  <p className="text-xs text-[#4D4D4D] mt-1">We reply within 24 hours.</p>
                 </div>
               </div>
 
@@ -86,9 +83,9 @@ export default function Contact() {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-800">Phone</h4>
-                  <p className="text-slate-600 text-sm">+1 (555) 123-4567</p>
-                  <p className="text-xs text-slate-400 mt-1">Mon-Fri, 9 AM - 6 PM EST</p>
+                  <h4 className="font-bold text-black">Phone</h4>
+                  <p className="text-black text-sm">+1 (555) 123-4567</p>
+                  <p className="text-xs text-[#4D4D4D] mt-1">Mon-Fri, 9 AM - 6 PM EST</p>
                 </div>
               </div>
 
@@ -97,14 +94,14 @@ export default function Contact() {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-800">Address</h4>
-                  <p className="text-slate-600 text-sm">123 Learning Lane</p>
-                  <p className="text-xs text-slate-400 mt-1">Education City, EC 12345</p>
+                  <h4 className="font-bold text-black">Address</h4>
+                  <p className="text-black text-sm">123 Learning Lane</p>
+                  <p className="text-xs text-[#4D4D4D] mt-1">Education City, EC 12345</p>
                 </div>
               </div>
             </div>
             <div className="mt-12">
-              <h4 className="font-bold text-slate-800 mb-4">Follow Us</h4>
+              <h4 className="font-bold text-black mb-4">Follow Us</h4>
                             <nav className="flex items-center gap-[12px] w-[234px] h-[32px]">
                 <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#1877F2" d="M15 8a7 7 0 00-7-7 7 7 0 00-1.094 13.915v-4.892H5.13V8h1.777V6.458c0-1.754 1.045-2.724 2.644-2.724.766 0 1.567.137 1.567.137v1.723h-.883c-.87 0-1.14.54-1.14 1.093V8h1.941l-.31 2.023H9.094v4.892A7.001 7.001 0 0015 8z"></path><path fill="#ffffff" d="M10.725 10.023L11.035 8H9.094V6.687c0-.553.27-1.093 1.14-1.093h.883V3.87s-.801-.137-1.567-.137c-1.6 0-2.644.97-2.644 2.724V8H5.13v2.023h1.777v4.892a7.037 7.037 0 002.188 0v-4.892h1.63z"></path></g></svg>
 

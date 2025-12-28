@@ -5,6 +5,7 @@
 import React, { useState } from 'react';
 
 
+
 const faqData = [
   {
     question: "Is BetterMontessori free?",

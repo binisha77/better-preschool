@@ -38,7 +38,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section id="testimonials" className="max-w-full py-20 flex flex-col lg:flex-row items-center ioverflow-hidden">
-            <div className="lg:w-1/2 bg-brand-blue p-10 md:p-16 pl-6 md:pl-[60px] rounded-tr-[5rem] text-white self-stretch flex flex-col justify-center">
+            <div className="lg:w-1/2 bg-brand-blue p-10 md:p-16 pl-6 md:pl-[60px] rounded-tr-[5rem] rounded-br-[5rem] text-white self-stretch flex flex-col justify-center">
         <h2 className="text-[29px] md:text-5xl font-bold mb-8 leading-tight">
           Hear From Our Parents And Community!
         </h2>
