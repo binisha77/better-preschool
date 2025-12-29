@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-   <header className='sticky top-0 z-50 w-full bg-white shadow-md rounded-4xl'>
+   <header className='sticky top-0 z-50 w-full bg-white shadow-md'>
     <nav className="
       flex flex-row items-center justify-between
       max-w-[1321px] h-[72.47px] 
@@ -25,7 +25,7 @@ export default function Header() {
       </div>
       <button className="
         w-[148px] h-[49px] flex-shrink-0 justify-end
-        bg-brand-blue text-white hover:bg-blue-700 trangition-colors
+        bg-brand-blue text-white hover:bg-blue-700
         rounded-[8px] border-[1px] border-brand-blue font-bold text-[16px]
       ">
         Log In

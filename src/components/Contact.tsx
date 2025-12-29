@@ -1,14 +1,53 @@
-   import Link from "next/link";
+'use client';
 import Image from "next/image";
+
+const cloudBumps = [
+  { left: '-76.52px', top: '12.4px' },
+  { left: '35.84px', top: '60.56px' },
+  { left: '160.31px', top: '66.95px' },
+  { left: '284.8px', top: '73.34px' },
+  { left: '423.43px', top: '48.99px' }, 
+  { left: '562.09px', top: '24.64px' },
+  { left: '700.75px', top: '0px' },
+  { left: '819.15px', top: '29.27px' },
+  { left: '937.53px', top: '58.55px' },
+  { left: '1055.91px', top: '88.12px' },
+  { left: '1160.6px', top: '63.12px' },
+  { left: '1265.28px', top: '38.12px' },
+];
+
+
 
 export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative bg-brand-blue py-24 w-full h-[1890px] overflow-hidden"
-    >
-
-      <div className="absolute top-[4478px] left-1/2 -translate-x-1/2 w-[1700px] h-[240px] bg-[#F9F9F9] rotate-[178.9deg]" />
+      className="relative bg-brand-blue py-24 w-full min-h-screen ">
+    
+      
+      <div className="absolute top-[-100px] left-0 w-full h-[300px] flex justify-center pointer-events-none z-0">
+        {cloudBumps.map((bump, i) => (
+          <div
+            key={i}
+               style={{ 
+                left: bump.left, 
+                top: bump.top,
+                width: '175.54px',
+                height: '155px' 
+              }}
+            className="
+             
+          absolute            
+          bg-white        
+          rounded-full 
+          flex-shrink-0
+          rotate-[178.9deg] 
+          border border-white
+          
+            "
+          />
+        ))}
+      </div>
       <div className="relative max-w-[1275px] mx-auto px-6 flex flex-col gap-20">
         <div className="flex flex-col items-center text-center gap-6">
           <div className="rotate-[-1.66deg] border-[3px] border-black bg-white px-8 py-3 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
@@ -21,10 +60,10 @@ export default function Contact() {
             Have questions? We’d love to hear from you! Reach out anytime.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-22 w-[1275px] h-[662px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full  max-w-[1275px] mx-auto">
 
-          <div className="bg-white rounded-[22px]  h-[662px]  p-10">
-            <h4 className="font-poppins font-bold w-[668px] h-[46px] text-[29px] mb-6 text-black">
+          <div className="bg-white rounded-[22px] min-h-[662px] w-full p-6 md:p-10">
+            <h4 className="font-poppins font-bold max-w-full text-[24px] md:text-[29px] mb-6">
               Send Us a Message!
             </h4>
 
@@ -65,42 +104,42 @@ export default function Contact() {
               </button>
             </form>
           </div>
-          <aside className="w -[471px] h-[550px] flex flex-col justify-between top-[96px] left-[147px] bottom-[96px] right-[147px] p-10 bg-white rounded-[22px] ">
-            <div className="space-y-15  ">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#38BAE0] flex items-center justify-center text-white flex-shrink-0">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                </div>
-                <div>
-                  <h4 className="font-bold text-black">Email</h4>
-                  <p className="text-black text-sm">support@bettermontessori.com</p>
-                  <p className="text-xs text-[#4D4D4D] mt-1">We reply within 24 hours.</p>
-                </div>
-              </div>
+    
+    <aside className="w-full max-w-[471px] min-h-[640px] bg-white rounded-[40px] shadow-sm flex flex-col p-6 md:p-[60px] justify-center">
+  <div className="flex flex-col gap-12">
+    <div className="flex items-start gap-5">
+      <div className="w-[52px] h-[52px] rounded-full bg-[#38BAE0] flex items-center justify-center text-white flex-shrink-0 shadow-sm">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div className="flex flex-col justify-center">
+        <h4 className="font-poppins font-bold text-[18px] text-black leading-tight">Email</h4>
+        <p className="font-poppins text-[15px] text-black">support@bettermontessori.com</p>
+        <p className="font-poppins text-[13px] text-[#4D4D4D] mt-1">We reply within 24 hours.</p>
+      </div>
+    </div>
+    <div className="flex items-start gap-5">
+      <div className="w-[52px] h-[52px] rounded-full bg-[#38BAE0] flex items-center justify-center text-white flex-shrink-0 shadow-sm">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+      <div className="flex flex-col justify-center">
+        <h4 className="font-poppins font-bold text-[18px] text-black leading-tight">Phone</h4>
+        <p className="font-poppins text-[15px] text-black">+1 (555) 123-4567</p>
+        <p className="font-poppins text-[13px] text-[#4D4D4D] mt-1">Mon-Fri, 9 AM - 6 PM EST</p>
+      </div>
+    </div>
+    <div className="flex items-start gap-5">
+      <div className="w-[52px] h-[52px] rounded-full bg-[#38BAE0] flex items-center justify-center text-white flex-shrink-0 shadow-sm">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      </div>
+      <div className="flex flex-col justify-center">
+        <h4 className="font-poppins font-bold text-[18px] text-black leading-tight">Address</h4>
+        <p className="font-poppins text-[15px] text-black">123 Learning Lane</p>
+        <p className="font-poppins text-[13px] text-[#4D4D4D] mt-1">Education City, EC 12345</p>
+      </div>
+    </div>
+  </div>
 
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#38BAE0] flex items-center justify-center text-white flex-shrink-0">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                </div>
-                <div>
-                  <h4 className="font-bold text-black">Phone</h4>
-                  <p className="text-black text-sm">+1 (555) 123-4567</p>
-                  <p className="text-xs text-[#4D4D4D] mt-1">Mon-Fri, 9 AM - 6 PM EST</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#38BAE0] flex items-center justify-center text-white flex-shrink-0">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                </div>
-                <div>
-                  <h4 className="font-bold text-black">Address</h4>
-                  <p className="text-black text-sm">123 Learning Lane</p>
-                  <p className="text-xs text-[#4D4D4D] mt-1">Education City, EC 12345</p>
-                </div>
-              </div>
-            </div>
-            <div className="mt-12">
+             <div className="mt-12">
               <h4 className="font-bold text-black mb-4">Follow Us</h4>
                             <nav className="flex items-center gap-[12px] w-[234px] h-[32px]">
                 <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#1877F2" d="M15 8a7 7 0 00-7-7 7 7 0 00-1.094 13.915v-4.892H5.13V8h1.777V6.458c0-1.754 1.045-2.724 2.644-2.724.766 0 1.567.137 1.567.137v1.723h-.883c-.87 0-1.14.54-1.14 1.093V8h1.941l-.31 2.023H9.094v4.892A7.001 7.001 0 0015 8z"></path><path fill="#ffffff" d="M10.725 10.023L11.035 8H9.094V6.687c0-.553.27-1.093 1.14-1.093h.883V3.87s-.801-.137-1.567-.137c-1.6 0-2.644.97-2.644 2.724V8H5.13v2.023h1.777v4.892a7.037 7.037 0 002.188 0v-4.892h1.63z"></path></g></svg>
@@ -129,16 +168,14 @@ export default function Contact() {
           style={{ fill: "#fff" }}
         />
       </g>
-    </svg>
-
-    
+    </svg> 
   </nav>
-                </div>
-    </aside>
+  </div>
+</aside>
       <div className="w-full flex justify-center items-center mt-20 relative z-20">
   <div className="relative w-[511px] h-[511px] top-[10px] left-[220px] md:w-[500px] md:h-[500px] bg-white rounded-full flex flex-col items-center justify-center p-8 text-center ">
     <div className="absolute -left-12 md:-left-50 bottom-20 md:bottom-24 ">
-      <button className="flex items-center gap-5 bg-white border border-[#2B2424] px-4 py-2 md:px-7 md:py-3 rounded-[10px] w-[297px] h-[89px]">
+      <button className="flex items-center gap-5 bg-white border border-[#2B2424] px-1 py-2 md:px-7 md:py-3 rounded-[10px] w-[297px] h-[89px]">
         <Image src="/appstoreicon.png" alt="Apple" width={32} height={32} className="w-6 h-6 md:w-8 md:h-8" />
         <div className="text-left">
           <p className="text-[10px] md:text-xs text-[#2B2424] uppercase font-semibold">Get it on</p>
@@ -167,7 +204,6 @@ export default function Contact() {
   </p>
     </div>   
        </div>  
-
 
         </div>
       </div>

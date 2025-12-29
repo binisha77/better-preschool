@@ -31,10 +31,30 @@ export default function Feature() {
     <section id="feature" className="w-full bg-white py-10">
       <div className="flex flex-col items-center w-full max-w-[1022px] mx-auto gap-[24px]">
         <div className="flex flex-col items-center w-full max-w-[530px] text-center relative">
+          
           <h2 className="font-poppins font-bold text-[46px] leading-[160%] text-black">
             Watch Your Little One <br />
+               
              Grow & Shine!
           </h2>
+          <div className="
+    absolute 
+    top-[77.31px]
+    right-[390.37px]    
+    w-[120.73px] 
+    h-[28.29px] 
+    bg-[#38BAE0] 
+    text-white 
+    rounded-[20px] 
+    flex items-center justify-center 
+    -rotate-[25deg]  
+    font-bold 
+    text-[12px] 
+    z-10             
+    shadow-sm
+  ">
+    Curiosity Leads
+  </div>
         </div>
         <div className="max-w-[1022px] w-full text-center">
         <p className="font-reem font-normal text-[26px] leading-[160%] text-black">
@@ -54,14 +74,14 @@ export default function Feature() {
         <p className="font-poppins font-normal text-[23px] leading-[160%] text-[#6C6C6C] max-w-[435px]">
            Keep track of what your child is doing.
         </p>
-
+    
       </div>
 
       <div className="w-full max-w-[1004px] mx-auto mt-[80px] grid grid-cols-1 md:grid-cols-3 gap-[40px]">
          {features.map((feature, index) => (
     <div
       key={index}
-      className="bg-[#EBF8FC] h-[273px] w-[268px] rounded-[16px] border-[2px] border-brand-blue p-6 flex flex-col items-center gap-4"
+      className="bg-[#EBF8FC] h-[273px] w-[268px] rounded-[16px] border-[3px] border-brand-blue p-6 flex flex-col items-center gap-4"
     >
   
       <div className="w-[60px] h-[60px] flex items-center justify-center bg-white rounded-[110px] border-[1px] border-brand-blue text-[30px]">

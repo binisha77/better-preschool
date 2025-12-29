@@ -1,6 +1,7 @@
 
 'use client';
 import React from 'react';
+import Image from 'next/image';
 
 const reasons = [
   {
@@ -33,7 +34,8 @@ export default function About() {
   return (
     <section id="about" className="w-full bg-white  flex flex-col items-center">
       
-      <div className="relative w-full max-w-[1440px] h-[529px] bg-brand-blue  flex flex-row items-center justify-between overflow-hidden">
+      {/* <div className="relative w-full max-w-[1440px] h-[529px] bg-brand-blue  flex flex-row items-center justify-between overflow-hidden">
+        
         <div className="flex flex-col w-[610px] h-[356px] absolute top-[87px] left-[114px] gap-[24px] text-white">
           <div className="w-[179px] h-[42px] rounded-[20px] border-[1px] border-white p-[10px] gap-[10px] flex flex-row items-center  ">
             <span className="font-poppins text-[14px] leading-[160%]">Caring Is Always Free</span>
@@ -56,11 +58,60 @@ export default function About() {
             “Empowering little learners to build big futures with curiosity and kindness.”
           </p>
         </div>
-      </div>
-      <div className="mt-[100px] flex flex-col items-center gap-[40px]">
+      </div> */}
+      <div className="relative w-full max-w-[1440px] mx-auto min-h-[529px] bg-brand-blue flex items-center overflow-hidden px-6 lg:px-[114px]">
+
+  <div className="flex flex-col gap-6 text-white max-w-[610px]">
+
+    <div className="w-fit rounded-[20px] border border-white px-4 py-2 flex items-center">
+      <span className="font-poppins text-[14px] leading-[160%]">
+        Caring Is Always Free
+      </span>
+    </div>
+
+    <h6 className="font-poppins font-bold text-[26px] lg:text-[29px] leading-[160%]">
+      We Help Your Children <br />
+      <span className="text-brand-yellow">Grow with Confidence</span>
+    </h6>
+
+    <p className="font-poppins text-[16px] lg:text-[18px] leading-[160%] text-white">
+      We believe every child’s growth journey is unique and special.
+      BetterMontessori was created by parents and educators who wanted a
+      simple, joyful way to track and celebrate every milestone.
+      Our mission is to help parents and educators stay connected to
+      children’s development, making it easy to see patterns, celebrate
+      progress, and support growth in a fun, colorful way.
+    </p>
+  </div>
+<div className="hidden md:flex absolute right-[40px] lg:right-[114px] 
+  top-1/2 -translate-y-1/2 
+  w-[300px] lg:w-[359px] 
+  h-[330px] lg:h-[383px] 
+  bg-white rounded-[40px] border-[6px] border-white 
+  items-end justify-center p-6">
+
+  <p className="font-poppins font-bold text-[16px] lg:text-[18px] text-center leading-[160%] text-black">
+    “Empowering little learners to build big futures with curiosity and kindness.”
+  </p>
+</div>
+
+
+</div>
+
+
+      <div className="mt-[1px] flex flex-col items-center gap-[40px]">
         <h3 className="font-poppins font-bold text-[41px]">
+          <div className="w-[122.78px] h-[120.09px] top-[60px] left-[625px] rotation-[-69.66deg] relative">
+          <Image 
+            src="/image.png" 
+            alt="image"
+            fill
+            className="object-contain"
+          />
+        </div>
           Why Choose Better <span className="text-brand-blue">Montessori</span>?
         </h3>
+        
         <div className="flex flex-wrap justify-center gap-x-12 gap-y-20 max-w-[1300px] mx-auto">
           {reasons.map((item) => (
             <div key={item.id} 
